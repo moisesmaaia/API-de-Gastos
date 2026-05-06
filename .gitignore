@@ -1,10 +1,10 @@
 # ambiente virtual
-venv
-env
-.venv
+venv/
+env/
+.venv/
 
 # cache Python
-__pycache__
+__pycache__/
 .pyc
 
 # banco local (se tiver)
@@ -14,6 +14,9 @@ __pycache__
 # configs locais
 .env
 
+# variáveis de ambiente
+.env
+
 # IDEs
-.vscode
-.idea
+.vscode/
+.idea/
