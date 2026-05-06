@@ -53,6 +53,7 @@ Essa API foi desenvolvida com FastAPI e SQLAlchemy para gerenciamento de transa�
 API-Gastos/
 │
 ├── codigo/
+│   ├── .env
 │   ├── main.py
 │   ├── database.py
 │   │
@@ -65,7 +66,6 @@ API-Gastos/
 │   └── services/
 │       └── transaction_service.py
 │
-├── .env
 ├── requirements.txt
 ├── README.md
 ```
@@ -86,7 +86,7 @@ Antes de rodar o projeto, você precisa ter instalado:
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/moisesmaaia/API-de-gastos.git
+git clone https://github.com/moisesmaaia/API-de-Gastos.git
 cd API-de-Gastos
 cd codigo
 ```
