@@ -50,15 +50,24 @@ Essa API foi desenvolvida com FastAPI e SQLAlchemy para gerenciamento de transa�
 ## 📁 Estrutura do projeto
 
 ```bash
+API-Gastos/
 │
-├── main.py
-├── database.py
-├── models/
-│ └── transaction.py
-├── routes/
-│ └── transaction_routes.py
-└── services/
-  └── transaction_service.py
+├── codigo/
+│   ├── main.py
+│   ├── database.py
+│   │
+│   ├── models/
+│   │   └── transaction.py
+│   │
+│   ├── routes/
+│   │   └── transaction_routes.py
+│   │
+│   └── services/
+│       └── transaction_service.py
+│
+├── .env
+├── requirements.txt
+├── README.md
 ```
 
 ---
@@ -97,12 +106,12 @@ venv\Scripts\activate
 ### 3. Instalar dependências
 
 ```bash
-pip install -r requirements.txt
+pip install -r ..\requirements.txt
 ```
 
 ### 4. Configurar banco de dados
 
-No arquivo database.py, configure:
+Crie um arquivo `.env` na raiz do projeto e adicione:
 
 ```bash
 DATABASE_URL = "mysql+pymysql://root:sua_senha@localhost/nome_do_banco"
