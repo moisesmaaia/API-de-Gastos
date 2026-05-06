@@ -1,0 +1,19 @@
+# ambiente virtual
+venv
+env
+.venv
+
+# cache Python
+__pycache__
+.pyc
+
+# banco local (se tiver)
+.db
+.sqlite3
+
+# configs locais
+.env
+
+# IDEs
+.vscode
+.idea
