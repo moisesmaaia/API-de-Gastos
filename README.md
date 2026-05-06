@@ -45,4 +45,90 @@ Essa API foi desenvolvida com FastAPI e SQLAlchemy para gerenciamento de transa�
 
 - Valores monetários são armazenados como `float`
 
+---
+
+## 📁 Estrutura do projeto
+
+```bash
+│
+├── main.py
+├── database.py
+├── models/
+│ └── transaction.py
+├── routes/
+│ └── transaction_routes.py
+└── services/
+  └── transaction_service.py
+```
+
+---
+
+## ⚙️ Como rodar o projeto
+
+### Pré-requisitos
+
+Antes de rodar o projeto, você precisa ter instalado:
+
+- Python 3.10+
+- MySQL instalado e rodando
+- Git
+- pip (já vem com Python)
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/moisesmaaia/API-de-gastos.git
+cd codigo
+```
+
+### 2. Criar ambiente virtual
+
+```bash
+python -m venv venv
+```
+
+Ativar:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Instalar dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configurar banco de dados
+
+No arquivo database.py, configure:
+
+```bash
+DATABASE_URL = "mysql+pymysql://root:sua_senha@localhost/nome_do_banco"
+```
+
+### 5. Rodar aplicação
+
+```bash
+uvicorn main:app --reload
+```
+
+### 6. Acessar documentação
+
+``` bash
+http://127.0.0.1:8000/docs
+```
+
+# 📊 Endpoints principais
+
+### Transações
+- `GET /transactions`
+- `GET /transactions/{id}`
+- `POST /transactions`
+- `PUT /transactions/{id}`
+- `DELETE /transactions/{id}`
+
+### Dashboard
+- `GET /dashboard`
+
 
