@@ -78,6 +78,7 @@ Antes de rodar o projeto, você precisa ter instalado:
 
 ```bash
 git clone https://github.com/moisesmaaia/API-de-gastos.git
+cd API-de-Gastos
 cd codigo
 ```
 
